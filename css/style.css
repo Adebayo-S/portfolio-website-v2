@@ -3,6 +3,63 @@
 :root {
     --dark1: #042D39;
     --dark2: #003546;
-    --primary: #FEA609;
+    --brand: #FEA609;
     --white: #ffffff;
+    --body: #c7c5c1;
 }
+
+body {
+    color: var(--body);
+    font-family: 'rubik', sans-serif;
+    background-color: var(--dark1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+a {
+    transition: all 0.4s ease;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* BTN */
+.btn {
+    padding: 13px 18px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand)
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand)
+}
+
+.btn-outline-brand {
+    border: 1.5px solid var(--brand);
+    border-radius: 5px;
+}
+
+
