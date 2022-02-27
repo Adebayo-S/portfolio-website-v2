@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Roboto&family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 
 :root {
     --dark1: #042D39;
@@ -19,17 +19,43 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
 }
 
+.brand {
+    color: var(--brand);
+}
+
+/* NAV */
+.custom-container {
+    width: 90%
+}
+
+@media (min-width: 576px) {
+    .custom-container {
+        max-width: 90%
+    }
+}
+
 a {
     transition: all 0.4s ease;
-    color: var(--white);
     text-decoration: none;
     font-weight: 500;
+    padding: 0.625rem;
 }
 
 a:hover {
     color: var(--brand);
 }
 
+.navbar-custom {
+    font-size: 1rem;
+    padding: 2rem 0;
+}
+
+.navbar-custom .navbar-text {
+    color: var(--white);
+}
+
+
+/* ABOUT */
 img.avatar {
     width: 100%;
 }
