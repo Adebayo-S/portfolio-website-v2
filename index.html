@@ -18,51 +18,62 @@
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-      <div class="container custom-container">
-        <a class="navbar-brand" href="#">Sammie<span class="brand">.</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-text ms-auto">
-            <li class="nav-item active">
-              <a class="nav-text" aria-current="page" href="#about">About
-                <span class="sr-only"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-text" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-text" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-text" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-text" href="#">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- INTRO -->
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <span>Hello! I am</span>
-            <h1>Adebayo Samuel.</h1>
-            <p>I'm a software developer specializing in building exceptional digital
-              experiences.</p>
-            <a class="btn btn-brand" href="#" role="button">Get Resume</a>
-            <a class="btn btn-outline-brand" href="#" role="button">About Me</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container custom-container">
+          <a class="navbar-brand" href="#"><img src="/icons/logo.svg"><span class="move-left"><span>ammie</span><span class="brand">.</span></span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="navbar-link active" aria-current="page" href="#about">About
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link btn-resume ms-3" href="#">Resume</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- INTRO -->
+      <section id="intro">
+        <div class="hero-section d-flex align-items-center">
+          <div class="row custom-row d-flex align-content-around">
+            <div>
+              <span class="branded">Hello 👋, I am</span>
+              <h1 class="main-heading">Adebayo Samuel.</h1>
+              <h2>Software Engineer | Web Developer</h2>
+              <p>I'm a software developer specialized in building exceptional digital
+                experiences. As an autodidact, I consistently learn new technologies,
+                concepts, strategies and tools to ensure I'm delivering at an elite level.
+                I have the requisite technical and soft skills required to deliver on set objectives.</p>
+              <a class="btn btn-brand" href="#" role="button">Get Resume</a>
+              <a class="btn btn-outline-brand" href="#" role="button">About Me</a>
+            </div>
+          </div>
+          <img class="illustration ms-auto" src="/images/illustration.svg" alt="illustration of a man talking about code">
+        </div>
+      </section>
+    </main>
+
+
+
 
     <!-- ABOUT -->
     <section id="about">
