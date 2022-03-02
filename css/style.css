@@ -75,25 +75,10 @@ a:hover {
     padding: 0.75rem 1rem;
 }
 
-/* ------------------SOCIALS----------------------- */
-.socials {
-    position: fixed;
-    bottom: 0;
-    color: var(--saturatedbrand);
-}
-
-.socials-list {
-    list-style-type: none;
-}
-
-
-
-
-
 /* ------------------INTRO----------------------- */
 .hero-section {
+    padding: 0 3%;
     width: inherit;
-    margin-left: 150px;
     height: 100vh;
 }
 
@@ -101,14 +86,15 @@ a:hover {
     padding-bottom: 6.5rem;
 }
 
-.branded {
+.intro-text {
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--brand);
 }
 
 .main-heading {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    display: block;
+    font-size: clamp(2.2rem, 8vw, 5rem);
 }
 
 h2 {
@@ -121,8 +107,18 @@ h2 {
 }
 
 img.illustration {
-    height: 350px;
-    margin-right: 50px;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        margin-left: 100px;
+    }
+    img.illustration {
+        display: inline;
+        height: 350px;
+        margin-right: 2%;
+    }
 }
 
 /* BTN */
@@ -152,6 +148,35 @@ img.illustration {
     letter-spacing: 3px;
     padding: 13px 35px;
 }
+
+/* ------------------SOCIALS----------------------- */
+.socials {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .socials {
+        display: block;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        color: var(--saturatedbrand);
+        margin-left: 2%
+    }
+
+    .socials-list {
+        list-style-type: none;
+    }
+
+    .socials-list li a {
+        padding: 10px;
+    }
+
+    .socials-list li {
+        margin: 10px;
+    }
+}
+
 
 /* ------------------ABOUT----------------------- */
 img.avatar {
