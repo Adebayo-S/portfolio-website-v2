@@ -18,8 +18,8 @@ body {
     background-color: var(--dark1);
 }
 
-h1, h3, h4, h5, h6 {
-    font-weight: 600;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
     color: var(--white);
 }
 
@@ -118,7 +118,7 @@ a:hover {
     font-size: clamp(2.2rem, 8vw, 5rem);
 }
 
-h2 {
+h2.headline {
     color: var(--text1);
 }
 
@@ -199,10 +199,44 @@ img.illustration {
 
 
 /* ------------------ABOUT----------------------- */
-img.avatar {
-    width: 100%;
+
+.spin-shell {
+    width: 250px;
+    height: 250px;
+    animation: spin 12s linear infinite;
+    overflow: hidden;
 }
 
+.shell {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.avatar {
+    background: url(../images/Adebayo.jpg);
+    background-size: 100%;
+    width: 250px;
+    height: 250px;
+    animation: spin 12s linear infinite reverse;
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes morph {
+    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
+    100% {border-radius: 40% 60%;}
+}
+
+@keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+}
 
 
 
