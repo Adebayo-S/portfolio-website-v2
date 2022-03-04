@@ -1,9 +1,18 @@
 "use strict";
 
-let buttonList = [...document.querySelectorAll(".list-group-item")];
+const buttonList = [...document.querySelectorAll(".list-group-item")];
 
-for (button of buttonList) {
+buttonList.forEach((button) => {
     button.addEventListener("click", (e)=> {
+        let buttons = e.target.parentNode.children;
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active");
+        }
+
         e.target.classList.add("active");
     })
-}
+})
+
+
+
