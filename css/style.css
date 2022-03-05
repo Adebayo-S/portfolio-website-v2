@@ -2,7 +2,7 @@
 
 :root {
     --dark1: #00244d;
-    --dark2: #003546;
+    --dark2: #023e7e;
     --brand: #FEA609;
     --white: #ffffff;
     --text1: #8892b0;
@@ -19,14 +19,20 @@ body {
     background-color: var(--dark1);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-weight: 500;
     color: var(--white);
+}
+
+h3 {
+    color: var(--text2);
 }
 
 .brand {
     color: var(--brand);
 }
+
+
 
 section {
     padding: 100px 0px
@@ -297,7 +303,7 @@ img.illustration {
     height: 100vh;
 }
 
-.portfolio-image {
+.portfolio1-image {
     background-image: linear-gradient(90deg, rgba(254, 166, 9, 0.5), rgba(0, 0, 0, 0.5)),
     url('/images/kid-vacc.PNG');
     background-size: cover;
@@ -305,16 +311,21 @@ img.illustration {
     height: 270px;
 }
 
-/* .portfolio-wrapper a::before {
-    content: "";
-    position: absolute;
+.portfolio2-image {
+    background-image: linear-gradient(90deg, rgba(254, 166, 9, 0.5), rgba(0, 0, 0, 0.7)),
+    url('/images/pixel-art.PNG');
+    background-size: cover;
     width: 560px;
     height: 270px;
-    z-index: 2;
-    background-color: var(--brand);
-    opacity: 0.4;
+}
 
-} */
+.portfolio3-image {
+    background-image: linear-gradient(90deg, rgba(254, 166, 9, 0.5), rgba(0, 0, 0, 0.3)),
+    url('/images/procode.PNG');
+    background-size: cover;
+    width: 560px;
+    height: 270px;
+}
 
 @media (max-width: 992px) {
 
@@ -338,5 +349,16 @@ img.illustration {
 }
 
 .custom-card a {
+    padding: 0.2rem;
+}
+
+/* ------------------OTHER WORKS---------------------- */
+
+.custom-small-cards {
+    background-color: var(--dark2);
+    box-shadow: -1px 5px 43px 2px rgba(0,0,0,0.48);
+}
+
+.custom-small-cards a {
     padding: 0.2rem;
 }
