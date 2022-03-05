@@ -36,7 +36,7 @@
                 <a class="navbar-link" href="#about">About</a>
               </li>
               <li class="nav-item mt-4 mt-lg-0">
-                <a class="navbar-link" href="#skills">Skills</a>
+                <a class="navbar-link" href="#about">Skills</a>
               </li>
               <li class="nav-item mt-4 mt-lg-0">
                 <a class="navbar-link" href="#work">Work</a>
@@ -70,7 +70,7 @@
 
     <main class="container">
       <!-- INTRO -->
-      <section id="intro">
+      <section id="intro" class="adjust-intro">
         <div class="hero-section d-flex align-items-center">
           <div class="row d-flex align-content-around">
             <div>
@@ -94,7 +94,7 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <div class="adjust-about container mt-5">
+      <div class="adjust-about container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h2>About Me</h2>
@@ -111,15 +111,13 @@
           </div>
         </div>
       </div>
-    </section>
 
     <!-- SKILLS -->
-    <section id="skills">
       <div class="container">
         <h2 class="row col-12 skills-heading mt-5 justify-content-center">Some technologies I have been working with</h2>
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-6 row justify-content-center">
-              <div class="col-4 btn-group-vertical">
+              <div class="col-4 align-self-start btn-group-vertical">
                 <button type="button" class="btn-skills list-group-item list-group-item-action active" aria-current="true">
                   Web
                 </button>
@@ -127,10 +125,18 @@
                 <button type="button" class="btn-skills list-group-item list-group-item-action">Design</button>
                 <button type="button" class="btn-skills list-group-item list-group-item-action">Other tools</button>
               </div>
-              <ul class="col-6 ms-5 list-unstyled d-flex flex-wrap justify-content-between">
-                <li><img src="/icons/html.svg"><span class="ms-1">HTML</span></li>
-                <li><img src="/icons/css.svg"><span class="ms-1">CSS</span></li>
-
+              <ul class="web col-6 align-self-start ms-5 list-unstyled d-flex flex-wrap justify-content-between">
+                <li class="mb-1 mb-md-2"><img src="/icons/html.svg"><span class="ms-1">HTML</span></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/css.svg"><span class="ms-1">CSS</span></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/bootstrap.svg"><span class="ms-1">Bootstrap</span></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/tailwind.svg"><span class="ms-1">Tailwind</span></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/react.svg"><span class="ms-1">React</span></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/mongodb.svg"><span class="ms-1">MongoDB</span></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/node.svg"></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/sass.svg"></li>
+                <li class="mb-1 mb-md-2"><img src="/icons/express.svg"></li>
+              </ul>
+              <ul class="programming col-6 align-self-start ms-5 list-unstyled d-flex flex-wrap justify-content-between">
 
               </ul>
             </div>
@@ -141,46 +147,23 @@
     <!-- WORKS -->
     <section id="work">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>Some of my works</h2>
-            <div class="col-9">
-              <a href="https://kid-vacc.netlify.app/" class="">
-                <img src="" alt="kid vacc website">
+        <h2 class="row justify-content-center">Some of my works</h2>
+        <div class="row mt-5 justify-content-center mx-auto col-lg-9">
+          <div class="row justify-content-center">
+            <div class="portfolio-wrapper mx-auto col-lg-9">
+              <a href="https://kid-vacc.netlify.app/" class="w-100 h-100">
+                <div class="portfolio-image"></div>
+                <!-- <img src="/images/kid-vacc.PNG" alt="kid vacc website"> -->
               </a>
-              <div>
-                <p class="">A web app for visualizing personalized Spotify data.
-                  View your top artists, top tracks, recently played tracks, and detailed audio
-                  information about each track.
-                </p>
-              </div>
             </div>
-            <div class="col-9">
-              <a href="https://kid-vacc.netlify.app/" class="">
-                <img src="" alt="kid vacc website">
-              </a>
-              <div>
-                <p class="">A web app for visualizing personalized Spotify data.
-                  View your top artists, top tracks, recently played tracks, and detailed audio
-                  information about each track.
-                </p>
-              </div>
+            <div class="col-lg-3">
+              sjfksnkfnksdfnksdnfksdnfksdfknsjdfnksdjfnksdjfksdjf
             </div>
-            <div class="col-9">
-              <a href="https://kid-vacc.netlify.app/" class="">
-                <img src="" alt="kid vacc website">
-              </a>
-              <div>
-                <p class="">A web app for visualizing personalized Spotify data.
-                  View your top artists, top tracks, recently played tracks, and detailed audio
-                  information about each track.
-                </p>
-              </div>
-            </div>
-
           </div>
+
+          <!-- <div class="row"></div>
+          <div class="row"></div> -->
         </div>
-      </div>
     </section>
 
     <!-- OTHER PROJECTS -->
