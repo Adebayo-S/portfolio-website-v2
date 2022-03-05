@@ -252,10 +252,13 @@ img.illustration {
     .adjust-about {
         margin-left: 200px;
     }
+    #about {
+        max-width: 80%;
+    }
 }
 
 /* ------------------SKILLS----------------------- */
-#about, #work{
+#about {
     display: none;
 }
 .skills-heading {
@@ -314,13 +317,26 @@ img.illustration {
 } */
 
 @media (max-width: 992px) {
-    .portfolio-image {
-        width: 300px;
-        height: auto;
-    }
 
-    .portfolio-wrapper a::before {
-        width: 300px;
-        height: 100%;
-    }
+}
+
+.custom-card {
+    max-height: 170px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+}
+
+.custom-card-header {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.card-text {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.custom-card a {
+    padding: 0.2rem;
 }
