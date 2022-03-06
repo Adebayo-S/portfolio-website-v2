@@ -218,6 +218,9 @@ img.illustration {
   height: 100%;
 }
 
+/* animation adapted from
+(https://9elements.com/blog/css-border-radius/) on 03/03/2022 */
+
 .spin-shell {
   width: 250px;
   height: 250px;
